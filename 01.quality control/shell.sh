@@ -1,0 +1,1 @@
+java -jar /stor9000/apps/users/NWSUAF/2015060152/bin/Trimmomatic-0.38/trimmomatic-0.38.jar PE -threads 2 -trimlog $leftname.log $directory/$leftname$ARGV[1] $directory/$leftname$ARGV[2] $leftname\_1.fq.gz $leftname\_1.single.fastq.gz $leftname\_2.fq.gz $leftname\_2.single.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:40 TOPHRED33
