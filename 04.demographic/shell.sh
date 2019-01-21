@@ -8,5 +8,5 @@ chroms=`cat chr | cut -f 1`
 for chr in ${chroms}
 do
 java -cp ${classpath} ${mx} org.broadinstitute.sv.apps.ComputeGenomeMask -R ASM.fa  -O `pwd`/${chr}.fasta -readLength 36 -sequence ${chr}
-python softmasked_to_bed.py ${chr}.fasta >${chr}.alignable.region
+python2 softmasked_to_bed.py ${chr}.fasta >${chr}.alignable.region
 done
