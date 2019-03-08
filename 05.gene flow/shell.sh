@@ -1,3 +1,4 @@
+###############f3 and D statistic##################
 #generate the genotype posterior probability. Only positions sequenced at least once in each individual were considered
 #!/bin/sh
 export list=$1
